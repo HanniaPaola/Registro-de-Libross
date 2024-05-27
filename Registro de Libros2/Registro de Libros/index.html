@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gestión de Libros</title>
+</head>
+<body>
+    <form>
+        <h1>Gestión de Libros</h1>
+        <div class="input-group">
+            <input id="id" type="text" placeholder="Ingrese ID del Libro">
+        </div>
+        <div class="input-group">
+            <input id="titulo" type="text" placeholder="Ingrese Título del Libro">
+        </div>
+        <div class="input-group">
+            <input id="autor" type="text" placeholder="Ingrese Autor del Libro">
+        </div>
+        <div class="button-group">
+            <button id="libros-btn">Agregar Libro</button>
+            <div class="input-group">
+                <input id="search-id" type="text" placeholder="Ingrese ID del Libro para Buscar">
+            </div>
+            <button id="search-id-btn">Buscar Libro por ID</button>
+            <button id="print-btn">Imprimir Historial</button>
+            <button id="search-btn">Buscar Libro por Autor</button>
+            <button id="min-btn">Imprimir Libro con Título Mínimo</button>
+            <button id="max-btn">Imprimir Libro con Título Máximo</button>
+        </div>
+    </form>
+
+    <table id="books-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los libros se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script type="module" src="./src/controllers/script.js"></script>
+</body>
+</html>
+
